@@ -1,67 +1,131 @@
 # Healthcare Security Strategy — Zeta Alpha Medical
 
-**A Unified Approach to Cybersecurity and Information Integrity in Healthcare Technology**
+**Enterprise Cybersecurity Policy Suite + Government-Funded Medical Data Center Framework**
 
 ---
 
 ## Overview
 
-This repository contains a comprehensive cybersecurity policy handbook developed for **Zeta Alpha Medical**, a fictitious medical diagnostic and treatment system (MDTS) technology company operating across the United States, Canada, and Singapore. The handbook demonstrates end-to-end security policy development for a healthcare technology organization navigating HIPAA, GDPR, and FDA regulatory environments.
+This repository contains a two-phase cybersecurity strategy developed for **Zeta Alpha Medical**, a fictitious medical diagnostic and treatment system (MDTS) technology company operating across the United States, Canada, and Singapore.
 
-The primary deliverable is:
+**Phase 1** delivers a complete enterprise security policy suite aligned to the NIST Cybersecurity Framework, covering governance, risk management, access control, acceptable use, mobile/IoT, and incident response across a multi-jurisdictional healthcare technology company subject to HIPAA, GDPR, and FDA regulation.
 
-📄 **[ZetaAlpha_PolicyHandbook_Revised.docx](./ZetaAlpha_PolicyHandbook_Revised.docx)** — Complete security policy handbook (Word format)
+**Phase 2** extends the strategy to a government-funded medical data center housing protected health information (PHI). This phase escalates the compliance baseline from NIST CSF to **NIST SP 800-53 Rev. 5 HIGH**, implements the **NIST SP 800-37 Risk Management Framework (RMF)**, and introduces physical/environmental security policies for a facility categorized as **FIPS 199 HIGH** across confidentiality and integrity.
 
 ---
 
-## Policies Included
+## Repository Contents
+
+| Document | Description |
+|----------|-------------|
+| **[ZetaAlphCapstone_JohnWilliams.pdf](./ZetaAlphCapstone_JohnWilliams.pdf)** | Original capstone — 7-policy enterprise security strategy (NIST CSF aligned) |
+| **[ZetaAlpha_PolicyHandbook_Revised.pdf](./ZetaAlpha_PolicyHandbook_Revised.pdf)** | Revised and professionalized edition of the enterprise policy suite |
+| **[ZetaAlpha_PolicyHandbook_Revised.docx](./ZetaAlpha_PolicyHandbook_Revised.docx)** | Editable Word format of the revised handbook |
+| **[ZA_DataCenter_PolicyFramework_Sections1-4_1.pdf](./ZA_DataCenter_PolicyFramework_Sections1-4_1.pdf)** | Data center policy framework — Sections 1–4 (executive context, information security program, risk management, physical/environmental security) |
+
+---
+
+## Phase 1 — Enterprise Security Policy Suite
+
+Seven policies covering the full operational footprint of a healthcare MDTS company:
 
 | Policy | Scope |
 |--------|-------|
-| **Information Security Program Policy** | Enterprise-wide security governance, risk management, incident response, and compliance framework aligned to the NIST Cybersecurity Framework |
-| **Risk Management & Contingency/Incident Response Policy** | Systematic risk identification, assessment, and mitigation with structured incident response procedures, business impact analysis, and disaster recovery planning |
-| **Acceptable Use Policy** | Rules governing employee and contractor use of IT resources, including BYOD provisions, disciplinary escalation framework, and annual acknowledgment requirements |
-| **Non-Compliance Policy** | Tiered classification of policy violations (minor/serious), investigation procedures, and enforcement mechanisms |
-| **Email and Messaging Policy** | Secure communication standards including PHI encryption requirements, monitoring provisions, and data retention obligations |
-| **Mobile Device and IoT Use Policy** | Three-tier device support model, NIST SP 800-124 aligned threat management, IoT integration process, remote work security standards, and A-BAM device integration recommendation |
-| **Access Control Policy** | On-boarding/off-boarding access procedures, MFA implementation, IAM integration strategies, role-based access controls, and regulatory compliance auditing |
+| **Information Security Program** | Enterprise governance, risk management, incident response, NIST CSF alignment |
+| **Risk Management & Contingency/Incident Response** | Risk identification, business impact analysis, disaster recovery |
+| **Acceptable Use** | IT resource usage rules, BYOD provisions, disciplinary framework |
+| **Non-Compliance** | Tiered violation classification, investigation and enforcement |
+| **Email and Messaging** | PHI encryption requirements, monitoring, data retention |
+| **Mobile Device and IoT Use** | Three-tier device model, NIST SP 800-124 threat management, IoT integration |
+| **Access Control** | On/off-boarding, MFA, IAM integration, role-based access, compliance auditing |
+
+**Regulatory scope:** HIPAA Security Rule, GDPR, FDA medical device cybersecurity guidance
 
 ---
 
-## Key Skills Demonstrated
+## Phase 2 — Government-Funded Medical Data Center Framework
 
-- **Cybersecurity Policy Development** — Formulating governance-ready policies grounded in industry standards (NIST CSF, NIST SP 800-124) with clear scope, applicability, and enforcement mechanisms
-- **Regulatory Compliance** — Addressing HIPAA Security Rule requirements, GDPR data protection obligations, and FDA medical device cybersecurity guidance across multi-jurisdictional operations
-- **Risk Assessment & Management** — Strategic frameworks for identifying, assessing, and mitigating risks in medical device production and healthcare IT, including SWOT analysis, risk matrices, and continuous monitoring
-- **Incident Response Planning** — Structured response protocols with defined team composition, decision matrices for incident prioritization, communication strategies, and post-incident review processes
-- **Access Control & Identity Management** — Comprehensive IAM strategies including MFA, SSO, behavioral biometrics, adaptive authentication, and automated provisioning/deprovisioning
-- **IoT Security Governance** — Device registration workflows, network segmentation strategies, firmware management, and a five-step integration process for new IoT equipment
+Extends Phase 1 into a dedicated data center housing PHI under federal funding obligations. This framework supersedes the enterprise policies within the data center boundary and introduces requirements that did not exist in the original suite.
+
+### FIPS 199 Security Categorization
+
+| Security Objective | Impact Level | Rationale |
+|--------------------|-------------|-----------|
+| **Confidentiality** | HIGH | PHI disclosure causes severe individual harm; HIPAA penalties up to $1.5M/year per violation category |
+| **Integrity** | HIGH | Altered medical records or device telemetry can endanger patient lives |
+| **Availability** | MODERATE | Repository (not real-time clinical system); extended downtime disrupts care continuity but does not halt clinical operations |
+| **Overall** | **HIGH** | Highest watermark drives NIST SP 800-53 HIGH baseline selection |
+
+### Sections Covered (v1.0)
+
+| Section | Content |
+|---------|---------|
+| **1 — Executive Summary & Organizational Context** | Mission statement, government funding acknowledgment, regulatory compliance matrix (HIPAA, FISMA, NIST 800-53, FedRAMP, FIPS 199/200, 21 CFR Part 11, CMMC), applicability matrix, relationship to parent organization, FIPS 199 categorization |
+| **2 — Information Security Program Policy** | Governance structure (CISO/CTO/ISSO/Privacy Officer), FISMA compliance, NIST SP 800-53 HIGH baseline implementation, FedRAMP considerations, control tailoring, continuous monitoring (ConMon) strategy, POA&M management |
+| **3 — Risk Management Policy** | NIST SP 800-37 RMF six-step implementation (Categorize → Select → Implement → Assess → Authorize → Monitor), SSP requirements, FIPS 199/200 ongoing categorization, supply chain risk management (NIST SP 800-161), risk assessment methodology (NIST SP 800-30) |
+| **4 — Physical & Environmental Security Policy** | Five-zone concentric access model (public → vault), mantrap requirements, visitor management, perimeter security, HVAC/temperature (ASHRAE TC 9.9), fire detection (VESDA) and clean agent suppression, water detection, 2N power distribution, rack-level security (TIA-942), media sanitization (NIST SP 800-88), loading dock procedures |
 
 ---
 
-## Usage
+## Compliance Frameworks Referenced
 
-This repository serves as a reference template for developing cybersecurity strategy in the healthcare sector. To adapt this framework:
+| Framework | Application |
+|-----------|-------------|
+| NIST Cybersecurity Framework (CSF) | Phase 1 enterprise policy alignment |
+| NIST SP 800-53 Rev. 5 (HIGH baseline) | Phase 2 data center control set — 20 families, 400+ controls |
+| NIST SP 800-37 (RMF) | Phase 2 risk management methodology |
+| NIST SP 800-30 Rev. 1 | Risk assessment methodology |
+| NIST SP 800-88 Rev. 1 | Media sanitization |
+| NIST SP 800-124 | Mobile device security (Phase 1) |
+| NIST SP 800-161 Rev. 1 | Supply chain risk management |
+| FIPS 199 / FIPS 200 | System categorization and minimum security requirements |
+| HIPAA / HITECH | PHI protection and breach notification |
+| FISMA | Federal information system security requirements |
+| FedRAMP | Cloud/shared-service federal authorization (if applicable) |
+| 21 CFR Part 11 | FDA electronic records and signatures |
+| NIST SP 800-171 / CMMC | Controlled Unclassified Information (CUI) handling |
+| GDPR | EU data protection (Phase 1 — Singapore/international operations) |
+| ASHRAE TC 9.9 | Data center thermal guidelines |
+| TIA-942 | Data center cabling standards |
 
-1. **Review** each policy section for applicability to your organization's regulatory environment and operational scope.
-2. **Customize** role references, technology stack details, and jurisdictional requirements to match your organizational structure.
-3. **Implement** policies with appropriate training programs, acknowledgment procedures, and review cadences.
-4. **Maintain** compliance through the annual review cycles and trigger-event processes defined in each policy.
+---
+
+## Skills Demonstrated
+
+- **Federal Security Compliance** — FISMA, FedRAMP, NIST SP 800-53 HIGH baseline implementation, ATO process, continuous monitoring
+- **Risk Management Framework (RMF)** — Full six-step NIST SP 800-37 implementation with SSP, SAR, and POA&M documentation requirements
+- **Healthcare Regulatory Navigation** — HIPAA Security Rule, HITECH breach notification, 21 CFR Part 11 for medical device data, multi-jurisdictional compliance
+- **Physical Security Architecture** — Concentric zone access model, mantrap design, VESDA fire detection, 2N power distribution, TIA-942 cabling
+- **Supply Chain Risk Management** — NIST SP 800-161 aligned SCRM program with vendor registry, flow-down clauses, and tamper-evident procurement
+- **Data Classification & Categorization** — FIPS 199 impact analysis driving control baseline selection and ongoing recategorization governance
+- **Policy Development at Scale** — 11+ policies across enterprise and facility scopes with clear governance hierarchies, review triggers, and enforcement mechanisms
 
 ---
 
 ## Document History
 
-| Version | Date | Description |
-|---------|------|-------------|
-| 1.0 | February 2024 | Initial policy handbook |
-| 1.1 | February 2026 | Revised edition — standardized naming conventions, reconciled governance roles (CISO/CTO), added PHI encryption requirements to Email Policy, reformatted references, and professionalized document structure |
+| Version | Date | Scope | Description |
+|---------|------|-------|-------------|
+| 1.0 | Feb 2024 | Enterprise | Initial capstone policy handbook |
+| 1.1 | Feb 2026 | Enterprise | Revised edition — standardized naming, reconciled governance roles, added PHI encryption requirements, professionalized structure |
+| 1.0 | Feb 2026 | Data Center | New framework — Sections 1–4: executive context, information security program, risk management, physical/environmental security |
+
+---
+
+## Usage
+
+This repository demonstrates end-to-end cybersecurity strategy development from enterprise governance through federal data center compliance. To adapt this framework:
+
+1. **Review** the Phase 1 enterprise policies for organizational applicability, then assess whether your environment requires the Phase 2 federal/data center extensions.
+2. **Customize** role references, technology stack details, jurisdictional requirements, and FIPS 199 categorization to match your specific operational profile.
+3. **Implement** with appropriate training programs, acknowledgment procedures, SSP documentation, and ATO processes.
+4. **Maintain** compliance through the annual review cycles, trigger-event processes, and continuous monitoring strategy defined throughout both phases.
 
 ---
 
 ## Confidentiality Note
 
-This document was developed for a fictitious organization and does not contain real company information, personnel data, or proprietary systems. It serves as a demonstration of cybersecurity policy development principles for professional portfolio purposes.
+This work was developed for a fictitious organization and does not contain real company information, personnel data, or proprietary systems. It serves as a demonstration of cybersecurity policy development principles for professional portfolio purposes.
 
 ---
 
