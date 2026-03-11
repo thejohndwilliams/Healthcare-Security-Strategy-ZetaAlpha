@@ -23,6 +23,20 @@ This repository contains a two-phase cybersecurity strategy developed for **Zeta
 | **[ZetaAlpha_PolicyHandbook_Revised.docx](./ZetaAlpha_PolicyHandbook_Revised.docx)** | Editable Word format of the revised handbook |
 | **[ZA_DataCenter_PolicyFramework_Sections1-4_1.pdf](./ZA_DataCenter_PolicyFramework_Sections1-4_1.pdf)** | Data center policy framework — Sections 1–4 (executive context, information security program, risk management, physical/environmental security) |
 
+### Coursework — Individual Policy Assignments
+
+The `coursework/` directory contains the individual module assignments that were developed iteratively throughout the course and ultimately assembled into the capstone handbook. These show the policy development process from first draft through final integration.
+
+| File | Module | Policy Area |
+|------|--------|-------------|
+| **[Module1Assignment_JohnWilliams.docx](./coursework/Module1Assignment_JohnWilliams.docx)** | Module 1 | Information Security Program & Privacy |
+| **[RiskManagementPolicy_JohnWilliams.docx](./coursework/RiskManagementPolicy_JohnWilliams.docx)** | Module 2 | Risk Management & Incident Response |
+| **[ZAModule3_JohnWilliams.docx](./coursework/ZAModule3_JohnWilliams.docx)** | Module 3 | Acceptable Use, Non-Compliance, Email/Messaging |
+| **[MDMPolicy_JohnWilliams.docx](./coursework/MDMPolicy_JohnWilliams.docx)** | Module 4 | Mobile Device & IoT Security |
+| **[ACPPolicy_JohnWilliams.docx](./coursework/ACPPolicy_JohnWilliams.docx)** | Module 5 | Access Control, Identification & Authentication |
+| **[SecurityTraining_JohnWilliams.pptx](./coursework/SecurityTraining_JohnWilliams.pptx)** | Module 6 | Security Awareness & Training Program |
+| **[ISEC 5430_Simmons.pdf](./coursework/ISEC%205430_Simmons.pdf)** | — | Course syllabus (ISEC 5430: Enterprise Cybersecurity, Baylor University) |
+
 ---
 
 ## Phase 1 — Enterprise Security Policy Suite
